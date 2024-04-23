@@ -1,0 +1,44 @@
+.quillInput {
+  box-shadow: 0px 0 5px 2px #0000000d;
+  border-radius: 10px;
+}
+
+.label {
+  color: var(--main-color);
+  text-transform: capitalize;
+  font-family: var(--ff-primary-reg);
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.quill {
+}
+
+.quillInput > div > div:nth-child(1) {
+  border-top-left-radius: 10px !important;
+  border-top-right-radius: 10px !important;
+  border: none;
+  border-bottom: 1px solid var(--text-color-black);
+}
+
+.quillInput > div > div:nth-child(2) {
+  border-bottom-left-radius: 10px !important;
+  border-bottom-right-radius: 10px !important;
+  height: calc(100% - 42px);
+  min-height: 150px;
+  overflow-y: scroll;
+  border: none;
+}
+.loaderDiv {
+  position: relative;
+  z-index: 0;
+}
+.loader {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

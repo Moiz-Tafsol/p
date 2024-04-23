@@ -1,0 +1,169 @@
+:root {
+  --main-color: #06856c;
+  --primary-color: #505050;
+  --primary-text-color: #4a4a4a;
+  --text-color-gray: #6c6c6c;
+  --black-color: #000;
+  --white-color: #ffffff;
+  --star-color: #e88c1d;
+  --text-dark-gray: #808080;
+  --placeholder-color: #7f7f7f;
+  --section-background: #f7f9fa;
+  --section-background-light: #f7f7f7;
+  --light-pink: #f3eaff;
+  --dark-pink: #705398;
+  --border-color: #e0e0e0;
+  --label-color: #9b9b9b;
+  --text-color-brand: #00b8bf;
+  --light-gray-color: #949393;
+  --disabled-input-color: #fafafa;
+  --disabled-label-color: #ababab;
+  --error-color: red;
+  --light-para-color: #6b7280;
+  --fs-header-800: 112px;
+  --heading-color:rgba(74, 74, 74, 1);
+
+  --input-background-color: #efefef;
+  --seagrean-color: --fs-header-600: 65px;
+  --fs-header-500: 60px;
+  --fs-800: 36px;
+  --fs-600: 33px;
+  --fs-500: 30px;
+  --fs-400: 24px;
+  --fs-200: 16px;
+  --fs-btn: 18px;
+  --fs-100: 17px;
+  --ff-primary-reg: "helix-regular";
+  --ff-primary-med: "helix-medium";
+  --ff-primary-bold: "helix-bold";
+  --ff-primary-semiBold: "helix-semiBold";
+  --ff-secondary-reg: "poppins-regular";
+  --ff-secondary-med: "poppins-medium";
+  --ff-secondary-bold: "poppins-bold";
+  --ff-secondary-semiBold: "poppins-semibold";
+}
+
+/* IBM */
+@font-face {
+  font-family: "helix-regular";
+  src: url("../../assets/fonts/Helix/Hellix-Regular.ttf");
+}
+
+@font-face {
+  font-family: "helix-medium";
+  src: url("../../assets/fonts/Helix/Hellix-Medium.ttf");
+}
+
+@font-face {
+  font-family: "helix-bold";
+  src: url("../../assets/fonts/Helix/Hellix-Bold.ttf");
+}
+
+@font-face {
+  font-family: "helix-semiBold";
+  src: url("../../assets/fonts/Helix/Hellix-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "poppins-bold";
+  src: url("../../assets/fonts/Poppins/Poppins-Bold.ttf") format("opentype");
+}
+
+@font-face {
+  font-family: "poppins-semibold";
+  src: url("../../assets/fonts/Poppins/Poppins-SemiBold.ttf") format("opentype");
+}
+
+@font-face {
+  font-family: "poppins-medium";
+  src: url("../../assets/fonts/Poppins/Poppins-Medium.ttf") format("opentype");
+}
+
+@font-face {
+  font-family: "poppins-regular";
+  src: url("../../assets/fonts/Poppins/Poppins-Regular.ttf") format("opentype");
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: var(--ff-primary-reg);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-size: var(--fs-base);
+}
+
+h1 {
+  font-family: var(--ff-primary-bold);
+}
+
+h2 {
+  font-family: var(--ff-primary-bold);
+}
+
+h3 {
+  font-family: var(--ff-primary-bold);
+}
+
+h4 {
+  font-family: var(--ff-primary-bold);
+}
+
+h5 {
+  font-family: var(--ff-primary-bold);
+}
+
+h6 {
+  font-family: var(--ff-primary-bold);
+}
+
+p {
+  font-size: var(--fs-base);
+}
+
+.primary-color {
+  color: var(--primary-color) !important;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* calendar css */
+.rbc-agenda-table tr {
+  background-color: transparent !important;
+  display: table-row !important;
+}
+
+.rbc-agenda-view table.rbc-agenda-table tbody>tr>td {
+  border-left: 1px solid #ddd;
+}
+
+.rbc-agenda-time-cell .rbc-continues-after:after,
+.rbc-agenda-time-cell .rbc-continues-prior:before {
+  content: none !important;
+}
+
+button svg {
+  color: var(--main-color) !important;
+}
+
+.active{
+  background-color: var(--main-color) !important;
+  color: var(--white-color) !important;
+  border-radius: 50px;
+  padding: 5px 20px;
+}

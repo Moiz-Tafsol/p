@@ -1,0 +1,73 @@
+.mainContainer {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--black-color);
+}
+
+.innerContainer {
+  background: white;
+  border-radius: 10px;
+  box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+  padding: 80px 100px !important;
+}
+
+.loginText h3 {
+  font-family: var(--ff-secondary-bold);
+  color: var(--black-color);
+  font-size: 53px;
+  text-align: center;
+}
+
+.loginBtn {
+  padding: 0px;
+  margin: 20px 0 0 0;
+  height: 54px;
+  width: 100%;
+  font-size: 18px;
+  border-radius: 10px;
+}
+
+.actions {
+  width: 100%;
+  text-align: end;
+  padding-right: 5px;
+}
+
+.actions:hover {
+  text-decoration: underline;
+}
+
+.inputCol {
+  margin: 20px 0;
+}
+
+.inputCol input {
+  font-family: var(--ff-secondary-reg) !important;
+  font-size: 17px;
+}
+
+.forgotPass {
+  text-align: right;
+}
+
+.forgotPass span {
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.link {
+  text-align: end;
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .innerContainer {
+    max-width: 94%;
+    margin: 0 auto;
+  }
+}

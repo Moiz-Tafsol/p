@@ -1,0 +1,50 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 22px;
+  align-items: center;
+  row-gap: 12px;
+}
+
+.contentMain {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.rowMain {
+  row-gap: 20px;
+}
+
+.contentMain>span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.description {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 1;
+}
+
+.filters {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+}
+
+.paginationDiv {
+  display: flex;
+  justify-content: center;
+}
+
+.search {
+  width: 280px;
+}

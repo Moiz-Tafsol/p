@@ -1,0 +1,244 @@
+.sidebar__wrapper {
+  position: sticky;
+  top: 0;
+}
+
+.mainContainer {
+  height: calc(100% - 10px);
+  width: 100%;
+  background-image: url(../../assets/images/sidebar-bg.jpg);
+  background-position: top;
+  background-size: cover;
+  width: 100%;
+  background-repeat: no-repeat;
+  margin: 10px 0px 10px 10px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.mainContainer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #06856cbe;
+  border-radius: 10px;
+}
+
+.toggleIcon {
+  rotate: 180deg;
+}
+
+.itemsContainer {
+  height: calc(100vh - 166px);
+  padding-top: 0;
+  padding-inline: 12px;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  /* padding-left: 30px; */
+}
+
+.setting-btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+  gap: 1rem;
+  border-radius: 8px !important;
+  background-color: transparent !important;
+  border: 1px solid var(--light-blue) !important;
+}
+
+.logout-btn {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+  color: var(--main-color) !important;
+  border-radius: 0 1rem 1rem 0 !important;
+  background-color: var(--white-color) !important;
+  border: 1px solid var(--light-blue) !important;
+  margin-inline-start: -12px;
+  width: 150px;
+  padding-inline-start: 2rem !important;
+  margin-block-start: auto;
+  margin-block-end: 2rem;
+  position: relative;
+  z-index: 2;
+  margin-top: 1rem;
+}
+
+.logoutCollapsed {
+  width: auto;
+}
+
+.logoContainer {
+  min-height: 120px;
+  max-width: 277px;
+  margin-inline: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  position: relative;
+  padding: 0px 20px;
+}
+
+.toggler {
+  position: absolute;
+  right: -10px;
+  background-color: var(--main-color);
+  color: var(--white-color);
+  bottom: 0;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  position: relative;
+  height: 70px;
+  width: 180px;
+}
+
+.logoContainer img {
+  height: auto;
+  max-width: 100%;
+}
+
+.listItemContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  text-decoration: none;
+  border-radius: 0 1rem 1rem 0;
+  padding: 0.9rem 1.3rem;
+  margin-left: -12px;
+}
+
+.listItemContainer.isCollapsed {
+  margin-left: 0;
+  border-radius: 1rem;
+}
+
+.listItemContainer:last-of-type {
+  margin-bottom: 1rem !important;
+}
+
+.listItemContainer svg {
+  background-color: var(--white-color);
+  height: 35px;
+  width: 35px;
+  padding: 0.5rem;
+  border-radius: 8px;
+}
+
+.marginZero {
+  border-end-end-radius: 0;
+}
+
+.listItemContainer span {
+  font-family: var(--ff-primary-bold) !important;
+  font-size: var(--fs-base);
+  color: white;
+  margin-inline-start: 0.6rem;
+}
+
+svg.dropDownIcon {
+  position: absolute;
+  right: 15px;
+  top: 22%;
+  background-color: transparent;
+}
+
+.subMenu {
+  background-color: #aca5ffa8;
+  border-radius: 0 0 1rem 0;
+  margin-left: -12px;
+  margin-bottom: 1rem;
+}
+
+.innerItemContainer {
+  padding-top: 5px;
+  padding-bottom: 10px;
+  padding-left: 1.3rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-decoration: none;
+  z-index: 10;
+}
+
+.innerItemContainer span {
+  font-family: var(--ff-primary-reg) !important;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--white-color);
+  margin-left: 1rem;
+}
+
+.active {
+  background-color: white !important;
+  border: none;
+}
+
+.active span {
+  color: var(--main-color) !important;
+  font-family: var(--ff-primary-bold);
+  font-weight: 800;
+}
+
+.active svg {
+  color: white !important;
+  background-color: var(--main-color) !important;
+}
+
+.subActive {
+  /* background-color: var(--main-color) !important; */
+  padding-top: 14px;
+  padding-bottom: 14px;
+  border-radius: 5px;
+}
+
+.subActive span {
+  color: #ffffff;
+  color: var(--main-color) !important;
+}
+
+.subActive svg {
+  color: #ffffff !important;
+  color: var(--main-color) !important;
+}
+
+.itemsContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.cmsIcon {
+  background-color: var(--white-color);
+  padding: 2px 8px 6px 8px;
+  border-radius: 8px;
+
+}
+
+@media screen and (max-width: 992px) {
+  .toggler {
+    display: none;
+  }
+
+  .mainContainer {
+    margin: 0;
+    height: 100%;
+    border-radius: 0px;
+  }
+}

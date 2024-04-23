@@ -1,0 +1,16 @@
+.mb-16 {
+  margin-bottom: 1rem;
+}
+
+
+
+.label {
+  color: var(--text-gray-color);
+  text-transform: capitalize;
+  font-family: var(--ff-primary-reg);
+  font-weight: 500;
+  font-size: var(--fs-base);
+  margin-bottom: 4px !important;
+  margin-inline-start: 8px;
+
+}

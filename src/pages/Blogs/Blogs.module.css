@@ -1,0 +1,66 @@
+.header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.contentMain {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.rowMain {
+    row-gap: 20px;
+}
+
+.contentMain>span {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.filters {
+    display: flex;
+    gap: 12px;
+}
+
+
+.filtersActions {
+    display: flex;
+    gap: 12px;
+  }
+  
+.paginationDiv {
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.ellipse {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 545px) {
+    .header {
+        justify-content: center;
+    }
+
+    .filters {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .filtersActions {
+        justify-content: flex-end;
+    }
+}

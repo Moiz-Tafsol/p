@@ -1,0 +1,24 @@
+.mainDiv {
+  margin: 10px;
+}
+
+.entriesDiv {
+  margin-bottom: 10px;
+}
+.titles {
+  font-size: 20px;
+  margin-left: 8px;
+  font-family: var(--ff-primary-semiBold);
+  margin-top: 10px;
+  color: var(--main-color);
+}
+
+.quill {
+  margin-bottom: 10px;
+}
+
+.uploadImageBox {
+  border-radius: 10px;
+  background-color: var(--section-background);
+  margin-bottom: 10px;
+}

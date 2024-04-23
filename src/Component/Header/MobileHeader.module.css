@@ -1,0 +1,134 @@
+.headerMainDiv {
+  border-bottom: 1.5px solid var(--main-color);
+}
+.header {
+  min-height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  /* padding: 10px 15px; */
+  padding: 10px 15px;
+  max-width: 80%;
+  margin: 0 auto;
+}
+.imageContainer {
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+}
+
+.logo {
+  width: 180px;
+  height: auto;
+}
+
+.hamburger {
+  font-size: 25px;
+  color: var(--white-color);
+  fill: "#000";
+}
+
+.drawerContainer {
+  background: transparent
+    linear-gradient(#ffffff 0%, #fef7f1 100%, #ffffff 100%);
+  height: 100vh;
+  width: 100%;
+}
+.drawerLogo {
+  width: 210px;
+  height: auto;
+}
+
+/* User Section */
+.drawerUserSection {
+  height: 175px;
+  width: 100%;
+  background-color: var(--main-color);
+  object-fit: contain;
+  display: flex;
+  flex-direction: column;
+  padding: 70px 10px 70px 20px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.drawerUserSection .drawerUserImage {
+  height: 75px;
+  width: 75px;
+  object-fit: cover;
+  object-position: top center;
+  border-radius: 50%;
+}
+
+.drawerUserSection .drawerUserName {
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  margin-top: 10px;
+  text-transform: capitalize;
+}
+
+.drawerUserSection .drawerUserEmail {
+  font-size: 14px;
+  color: #fff;
+}
+
+/* Listing Section */
+.drawerList {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.listItem {
+  margin-top: 5px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  padding: 5px 10px 5px 20px;
+  cursor: pointer;
+}
+
+.listItem .listItemText {
+  margin-left: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #717171;
+  font-family: var(--ff-primary-reg);
+}
+
+.listItem svg {
+  fill: #717171;
+  font-size: 15px;
+}
+
+.activeItem {
+  background: #fdead7;
+}
+
+.activeItem .listItemText {
+  color: var(--main-color);
+}
+
+.activeItem svg {
+  fill: var(--main-color);
+}
+.cartNumbers {
+  background-color: var(--main-color);
+  color: var(--white-color);
+  border-radius: 50%;
+  padding: 6px;
+  margin-left: 8px;
+}
+
+@media (max-width: 1440px) {
+  .header {
+    max-width: 90%;
+  }
+}

@@ -1,0 +1,9 @@
+._form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.btn__wrapper button {
+  width: 100%;
+}

@@ -1,0 +1,131 @@
+.box {
+  user-select: none;
+  height: 200px;
+}
+
+.box label {
+  color: var(--primary-color);
+  text-transform: capitalize;
+  font-family: var(--ff-primary-bold);
+  font-size: 16px;
+}
+
+.uploadImageBox {
+  width: 100%;
+  height: 100%;
+
+  position: relative;
+  padding: 0.6rem;
+}
+
+.uploadBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.uploadBox .icon {
+  height: 75px;
+  width: 75px;
+  color: var(--label-color);
+}
+
+.uploadBox .uploadIcon {
+  position: absolute;
+  right: 12px;
+  top: 10px;
+  background-color: var(--secondary-color);
+  width: 43px;
+  height: 43px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.uploadBox .uploadIcon svg {
+  color: var(--main-color);
+  font-size: 20px;
+}
+
+/* Image Uploaded */
+.imageUploaded {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  position: relative;
+}
+
+.imageUploaded img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  border-radius: inherit;
+}
+
+.imageUploaded .editAndDelete {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.imageUploaded .editAndDelete .icon {
+  background-color: var(--secondary-color);
+  padding: 8px;
+  cursor: pointer;
+}
+
+.imageUploaded .editAndDelete .icon svg {
+  color: var(--main-color);
+  vertical-align: middle;
+  width: 16px;
+  height: 16px;
+  display: inherit;
+}
+
+.closeIcon {
+  position: absolute;
+  top: 10px;
+  left: 12px;
+  background-color: var(--secondary-color);
+  padding: 8px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.closeIcon svg {
+  color: var(--white-color);
+  vertical-align: middle;
+  display: flex;
+}
+
+.label {
+  color: var(--primary-color);
+  text-transform: capitalize;
+  font-family: var(--ff-primary-bold);
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .box {
+    height: 180px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .box {
+    height: 160px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .box {
+    height: 140px;
+  }
+}

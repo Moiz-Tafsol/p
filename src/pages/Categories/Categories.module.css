@@ -1,0 +1,81 @@
+.paginationDiv {
+  display: flex;
+  justify-content: center;
+}
+
+.contentMain {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.rowMain {
+  row-gap: 20px;
+}
+
+.contentMain>span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.filters {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 22px;
+}
+
+.pageheading {
+  font-family: var(--ff-primary-bold);
+  font-size: 22px;
+  margin-bottom: 0px;
+  color: var(--white-color);
+}
+
+.innerfilters {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.btns {
+  display: flex;
+  gap: 12px;
+}
+
+.search {
+  width: 300px;
+}
+
+@media (max-width: 1470px) {
+  .filters {
+    flex-direction: column;
+    gap: 22px;
+  }
+
+  .innerfilters {
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 590px) {
+  .innerfilters {
+    justify-content: start;
+    flex-direction: column;
+  }
+
+  .search {
+    width: auto;
+  }
+}
+
+@media (max-width: 470px) {
+  .tabs {
+    overflow-x: auto;
+  }
+}

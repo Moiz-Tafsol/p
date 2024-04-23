@@ -1,0 +1,219 @@
+.header {
+  padding: 15px 0px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.navbarContainer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  padding: 10px 20px;
+  max-width: 100%;
+  width: calc(100% - 48px);
+  user-select: none;
+  /* background-image: linear-gradient(
+    90.01deg,
+    #38d19b 2.02%,
+    rgba(56, 209, 155, 0.33) 55.51%,
+    rgba(56, 209, 155, 0.33) 55.51%,
+    #d8fff7 55.51%
+  ); */
+  background-color: var(--main-color);
+
+  margin: 10px 20px;
+  border-radius: 1rem;
+}
+
+.iconDiv {
+  height: 40px !important;
+  width: 40px !important;
+  margin-right: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--main-color);
+  border-radius: 50%;
+}
+
+.iconDiv svg {
+  display: inline-block;
+  vertical-align: top;
+  color: white;
+  filter: drop-shadow(0px 5px 2px rgb(0 0 0 / 0.3));
+}
+
+.profileImg {
+  background-color: #d6d6d6;
+  border: 2px solid var(--primary-color);
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  margin-inline-end: 0.5rem;
+}
+
+.profile-name {
+  font-family: var(--ff-secondary-med);
+  color: var(--white-color);
+}
+
+.profileImg img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top center;
+}
+
+.notifyIconDiv {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+.notifyIcon {
+  cursor: pointer;
+  font-size: 35px;
+}
+
+.notificationCount {
+  color: var(--white-color);
+}
+
+.notifyoverlayDiv {
+  top: 7px !important;
+  left: -10px !important;
+  z-index: 2;
+  background-color: var(--white-color);
+  box-shadow: 1px 1px 8px 0px #d5d5d5;
+  border-radius: 20px;
+}
+
+.notifyoverlayDiv ul {
+  padding: 20px 20px;
+  margin-bottom: 0px;
+}
+
+.notifyoverlayDiv ul li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  color: var(--dashboard-main-color);
+  user-select: none;
+  cursor: pointer;
+}
+
+.notifyoverlayDiv ul li:first-child {
+  margin-bottom: 10px;
+}
+
+.notifyoverlayDiv ul li svg {
+  vertical-align: middle;
+}
+
+.userName {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.userName p {
+  font-size: 20px;
+  font-family: "";
+  margin-bottom: 0px;
+  text-transform: capitalize;
+  font-family: "Open-Sans-regular";
+}
+
+.signup {
+  background-color: transparent;
+  color: var(--dashboard-main-color);
+  border: 1px solid var(--dashboard-main-color);
+  padding: 0;
+  height: 43px;
+  width: 120px;
+}
+
+.login {
+  margin-right: 16px;
+  padding: 0;
+  height: 43px;
+  width: 120px;
+}
+
+.profile-wrapper {
+  height: 40px;
+  width: 40px;
+  position: relative;
+}
+
+.profile-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-container p {
+  padding: 0 12px 0 0;
+  margin: 0;
+}
+
+.actionWrapper {
+  margin-inline-end: auto;
+}
+
+@media (max-width: 1080px) {
+  .notifyIconDiv {
+    margin-right: 16px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .iconDiv {
+    height: 40px !important;
+    width: 40px !important;
+  }
+
+  .notifyIcon {
+    font-size: 20px;
+  }
+
+  .profileImg {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .navbarContainer {
+    margin: 1rem;
+    width: calc(100% - 32px);
+  }
+
+  .actionWrapper>h1 {
+    font-size: 19px !important;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .profileImg {
+    margin: 0;
+  }
+
+  .profile-name {
+    display: none;
+  }
+
+  .iconDiv {
+    margin-inline: 8px;
+  }
+}

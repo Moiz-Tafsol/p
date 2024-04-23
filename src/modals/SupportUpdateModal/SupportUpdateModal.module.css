@@ -1,0 +1,71 @@
+.formCol input {
+  width: 100%;
+}
+
+.formCol {
+  margin: 0 auto;
+  width: 100%;
+  margin-bottom: 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.formCol p {
+  text-transform: capitalize;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.formCol p span {
+  margin-left: 3px;
+  font-weight: 200;
+}
+
+.btnCol {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btnCol button {
+  width: 100%;
+  padding: 12px 0px !important;
+}
+
+.cancel-button {
+  background-color: var(--text-color);
+}
+
+.imgTitleContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.titleText {
+  display: contents;
+  color: var(--text-color);
+  text-transform: capitalize;
+  font-family: "poppins-bold";
+  font-size: 16px;
+}
+
+.imgTitleContainer span {
+  font-family: "poppins-regular";
+  font-size: 17px;
+}
+
+.dropDownLabelClass {
+  color: var(--text-gray-color);
+  text-transform: capitalize;
+  font-family: var(--ff-primary-reg);
+  font-weight: 500;
+  font-size: var(--fs-base);
+  margin-bottom: 4px;
+  margin-inline-start: 8px;
+
+}

@@ -1,0 +1,29 @@
+.actions {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 1rem;
+}
+
+.paginationDiv {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.search {
+    width: 290px;
+}
+
+
+@media (max-width: 490px) {
+    .actions {
+        align-items: flex-end;
+        flex-direction: column;
+    }
+
+    .search {
+        width: 100%;
+    }
+}

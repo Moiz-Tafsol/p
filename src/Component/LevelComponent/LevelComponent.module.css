@@ -1,0 +1,59 @@
+.maincompodiv {
+  border-radius: 12px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.headerdiv {
+  padding-inline: 12px;
+  padding-block: 16px;
+  background-color: var(--main-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.headerdiv h4 {
+  font-family: var(--ff-primary-bold);
+  font-size: 26px;
+  color: white;
+
+  text-align: center;
+}
+
+.editbtn {
+  background-color: white;
+  color: var(--main-color);
+  padding-inline: 3px;
+  padding-block: 2px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.contentdiv {
+  text-align: center;
+  padding-block: 8px;
+}
+
+.contentdiv p {
+  font-family: var(--ff-primary-bold);
+}
+
+.icons {
+  display: flex;
+  gap: 12px;
+}
+
+.tag {
+  font-family: var(--ff-primary-med);
+  color: var(--main-color);
+  font-size: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  border: 1px solid var(--main-color);
+  background-color: var(--white-color);
+  padding-inline: 6px;
+  padding-block: 2px;
+  border-radius: 13px;
+}

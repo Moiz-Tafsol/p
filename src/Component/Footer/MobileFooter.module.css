@@ -1,0 +1,87 @@
+.mobileFooter_main {
+  background-color: #f7f7f7;
+  padding-top: 120px;
+}
+.mobileFooter_main img {
+  width: 300px;
+}
+.mobileFooter_main p {
+  margin-bottom: 0 !important;
+}
+.footer_para {
+  color: var(--text-color);
+  margin-top: 20px;
+}
+.links_head {
+  color: var(--text-color);
+  font-family: "raleway-Bold" !important;
+  font-size: 20px;
+}
+.socialLinks {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+.link_main {
+  background-color: var(--main-color);
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hr_line {
+  padding-top: 50px;
+  padding-bottom: 22px;
+}
+.hr_line hr {
+  margin-bottom: 0;
+  color: var(--dark-blue);
+  border-width: 2px;
+}
+
+.copy_line_main {
+  text-align: center;
+  padding-bottom: 10px;
+}
+.copy_line {
+  color: var(--text-color);
+  text-align: center;
+}
+.Accordion_items {
+  background-color: transparent !important;
+  border: none;
+}
+.Accordion_body {
+  padding: 0;
+}
+.Accordion_links_main {
+  padding: 0;
+}
+.Accordion_links_main li {
+  list-style-type: none;
+  display: block;
+}
+.Accordion_links_main li a {
+  display: block;
+  color: var(--text-color);
+  font-size: 17px !important;
+  text-decoration: none;
+  font-family: "raleway-regular";
+}
+.Accordion_header_main > button::after {
+  /* background-image: url(../../assets/images/dropdown-icon.png) !important; */
+  background-size: 70% 50% !important;
+  filter: brightness(0) saturate(100%) invert(73%) sepia(43%) saturate(2509%)
+    hue-rotate(334deg) brightness(100%) contrast(91%);
+}
+.all_links {
+  color: var(--white-color) !important;
+}
+
+@media screen and (max-width: 500px) {
+  .mobileFooter_main img {
+    width: 250px;
+  }
+}

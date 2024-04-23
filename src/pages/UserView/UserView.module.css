@@ -1,0 +1,99 @@
+.imageDiv {
+  display: flex;
+  justify-content: space-between;
+
+  padding-block: 20px;
+}
+._main {
+  padding-inline: 20px;
+}
+._image {
+  height: 139px;
+  width: 139px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+._image > img {
+  height: 100%;
+}
+._content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+._content > h1 {
+  font-size: 25px;
+  color: var(--heading-color);
+  font-family: var(--ff-primary-semiBold);
+}
+.Donations {
+}
+.Donations h5 {
+  font-size: 25px;
+  color: var(--heading-color);
+  font-family: var(--ff-primary-semiBold);
+}
+.Donations p {
+  font-size: 15px;
+  color: var(--label-color);
+}
+.infoDiv {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.info {
+  display: flex;
+
+  gap: 10px;
+}
+.AboutDiv {
+  display: flex;
+  gap: 20px;
+}
+.about {
+}
+.info > label {
+  font-size: 18px;
+  font-family: var(--ff-primary-semiBold);
+}
+.info > p {
+  font-size: 18px;
+  color: var(--label-color);
+}
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.about > label {
+  font-size: 18px;
+  font-family: var(--ff-primary-semiBold);
+}
+.about > p {
+  font-size: 18px;
+  color: var(--label-color);
+}
+.iconDiv > Link > svg {
+  size: 24px;
+}
+.socials {
+  display: flex;
+  gap: 20px;
+}
+
+.backbtn {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.user {
+  text-transform: capitalize;
+}
+@media (max-width: 1000px) {
+  .infoDiv {
+    gap: 10px;
+  }
+}

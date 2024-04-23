@@ -1,0 +1,72 @@
+.modalOverflow {
+  max-height: 60vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.modalOverflow::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #F5F5F5;
+  border-radius: 12px;
+}
+
+.modalOverflow::-webkit-scrollbar {
+  width: 6px;
+  background-color: var(--main-color);
+  border-radius: 12px;
+}
+
+.modalOverflow::-webkit-scrollbar-thumb {
+  background-color: var(--main-color);
+  border-radius: 12px;
+}
+
+.mb-1 {
+  margin-bottom: 1.7rem;
+}
+
+.user-profile {
+  height: 150px;
+  border-radius: 50%;
+  margin: 0 auto;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.user-profile img {
+  width: 100%;
+  height: 100%;
+}
+
+.profile-name {
+  margin-top: 0.8rem;
+  text-align: center;
+}
+
+.detailRow {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.detailRow h5 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+p {
+  margin-bottom: 0 !important;
+}
+
+.detailRow p {
+  font-size: 1rem;
+  word-break: break-word;
+}
+
+.messageRow {
+  flex-direction: column;
+  align-items: start;
+}

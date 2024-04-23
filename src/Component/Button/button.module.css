@@ -1,0 +1,11 @@
+.btn {
+  letter-spacing: -0.36px;
+  outline: none;
+  border: none;
+  font-family: var(--ff-primary-reg);
+  background-color: var(--main-color);
+  color: var(--white-color);
+  padding: 12px 30px;
+  border-radius: 10px;
+  font-size: 16px;
+}

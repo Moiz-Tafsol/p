@@ -1,0 +1,16 @@
+.header {
+  color: var(--white-color);
+  margin-bottom: 0px;
+  font-family: var(--ff-primary-bold);
+  font-size: 22px;
+}
+
+.row {
+  row-gap: 12px;
+}
+
+.addbtn {
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: flex-end;
+}

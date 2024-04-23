@@ -1,0 +1,54 @@
+.mainDiv {
+  margin: 10px;
+}
+
+.entriesDiv {
+  margin-bottom: 10px;
+
+}
+
+.title {
+  margin-left: 8px;
+  font-size: 20px;
+  font-family: var(--ff-primary-semiBold);
+  margin-top: 10px;
+  color: var(--main-color);
+}
+
+.quill {
+  margin-bottom: 10px;
+}
+
+.uploadImageBox {
+  border-radius: 10px;
+  background-color: var(--section-background);
+
+}
+
+.AddIcons {
+  background-color: #fbfcfc;
+  margin-block: 20px;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+._header {
+  display: flex;
+  justify-content: flex-end;
+  padding-block: 10px;
+}
+
+.DeleteIcon {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.DeleteIcon>svg {
+  font-size: 26px;
+}
+
+.pb-1rem {
+  padding-bottom: 1.5rem;
+}

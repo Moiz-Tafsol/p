@@ -1,0 +1,123 @@
+.Container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.labelOnTop {
+  margin-top: 1rem;
+}
+
+.labelText {
+  color: var(--text-gray-color);
+  text-transform: capitalize;
+  font-family: var(--ff-primary-reg);
+  font-weight: 500;
+  font-size: var(--fs-base);
+  margin-bottom: 4px;
+  margin-inline-start: 8px;
+}
+.onTopLabel {
+  position: absolute;
+  z-index: 1;
+  background-color: var(--white-color);
+  line-height: 1;
+  padding-inline: 8px;
+  top: -8px;
+  margin-inline-start: 1.5rem;
+  color: var(--primary-color);
+}
+
+.inputBox {
+  font-family: var(--ff-primary-reg);
+  font-size: var(--fs-base);
+  letter-spacing: 1.4px;
+
+  border-radius: 7px;
+  background-color: inherit;
+  padding: 13px;
+  width: 100%;
+  border: 1px solid var(--border-color);
+}
+.inputBox:focus-within {
+  border: 1px solid var(--primary-color);
+  outline: none !important;
+}
+
+.inputBox:disabled {
+  cursor: not-allowed;
+}
+
+.noBorder {
+  border: none;
+}
+
+.inputPassContainer {
+  display: flex;
+  position: relative;
+  background-color: var(--white-color);
+  border-radius: 6px;
+}
+
+.inputPassContainer input::placeholder {
+  color: var(--label-color);
+  font-family: var(--ff-primary-reg);
+  font-size: var(--fs-base);
+  text-transform: capitalize;
+}
+
+.inputPassContainer input:disabled {
+  background-color: var(--disabled-input-color);
+  color: #c9c9c9;
+  user-select: none;
+}
+
+.inputPassContainer .passwordIcon {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  bottom: 50%;
+  transform: translateY(-50%);
+  color: #cacaca;
+}
+
+.errorText {
+  color: red;
+}
+
+.disabled {
+  color: var(--disabled-label-color);
+}
+
+.leftIconBox {
+  position: absolute;
+  left: 20px;
+  top: 45%;
+  bottom: 55%;
+  transform: translateY(-50%);
+  height: max-content;
+}
+
+.rightIcon {
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: max-content;
+}
+
+.inputBox::-webkit-outer-spin-button,
+.inputBox::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/*  Firefox  */
+.inputBox[type="number"] {
+  -moz-appearance: textfield;
+}
+
+@media (max-width: 578px) {
+  .labelText {
+    font-size: var(--fs-base);
+  }
+}

@@ -1,0 +1,68 @@
+.HeaderNotification {
+  width: 425px;
+  height: 100%;
+  background-color: white;
+  box-shadow: 0 0 4px 0px #0000004a;
+  padding: 0px 0px 16px 0px;
+  border-radius: 12px;
+}
+
+.ImgDiv img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+}
+.HeaderNotificationInnerDiv {
+  display: flex;
+  /* align-items: center; */
+  border-bottom: 1px solid var(--text-color-gray);
+  padding: 0px 28px 16px 16px;
+  cursor: pointer;
+}
+.contentDiv {
+  margin-left: 12px;
+  width: 100%;
+}
+.contentDiv h6 {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin-bottom: 6px;
+}
+.contentDiv p {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  color: var(--text-color-gray);
+}
+.mb16 {
+  margin-bottom: 16px;
+}
+.viewAll {
+  text-align: center;
+  color: var(--main-color);
+  cursor: pointer;
+}
+.notificationHeader {
+  margin-bottom: 24px;
+  padding-left: 16px;
+  background: var(--main-color);
+  color: var(--white-color);
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+.notificationHeader h4 {
+  margin-bottom: 0px;
+}
+.titleDiv {
+  display: flex;
+  justify-content: space-between;
+}

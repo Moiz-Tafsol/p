@@ -1,0 +1,22 @@
+._form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.btn__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropDownLabelClass {
+    color: var(--text-gray-color);
+    text-transform: capitalize;
+    font-family: var(--ff-primary-reg);
+    font-weight: 500;
+    font-size: var(--fs-base);
+    margin-bottom: 4px;
+    margin-inline-start: 8px;
+
+}

@@ -1,0 +1,36 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.uploadImageBox {
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+}
+
+.dropDownLabel {
+    color: var(--text-gray-color) !important;
+    text-transform: capitalize !important;
+    font-family: var(--ff-primary-reg) !important;
+    font-weight: 500 !important;
+    font-size: var(--fs-base) !important;
+    margin-bottom: 4px !important;
+    margin-inline-start: 8px;
+}
+
+.quilLabel {
+    color: var(--text-gray-color);
+    text-transform: capitalize;
+    font-family: var(--ff-primary-reg);
+    font-weight: 500;
+    font-size: var(--fs-base);
+    margin-bottom: 0px;
+    margin-inline-start: 8px;
+}
+
+.quillClass {
+    box-shadow: none;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+}

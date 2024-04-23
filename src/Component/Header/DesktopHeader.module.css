@@ -1,0 +1,272 @@
+.header {
+  padding: 15px 15px;
+  /* box-shadow: 0 0 4px #00000059; */
+}
+
+.nabarLinks {
+  color: var(--primary-text-color) !important;
+  font-size: 16px !important;
+  padding: 2px 12px;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-family: var(--ff-primary-reg);
+  position: relative;
+}
+
+.signup_button {
+  background-color: var(--main-color);
+  color: var(--white-color);
+  border: 1px solid var(--main-color);
+}
+
+.navbarCustom__style {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex: 1;
+}
+
+.nabarLinks:nth-last-child(1) {
+  margin-right: auto;
+}
+
+.nabarLinks:first-child {
+  margin-left: auto;
+}
+
+.BiCart,
+.BsHeart {
+  border: 1px solid var(--primary-text-color);
+  border-radius: 50%;
+  font-size: var(--fs-200);
+  height: 48px;
+  width: 48px;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dflex {
+  display: flex;
+  gap: 14px;
+  margin-left: 20px;
+}
+
+.signup_button {
+  color: var(--white-color) !important;
+}
+
+.header_right {
+  color: var(--main-color);
+  text-decoration: none;
+  font-size: 18px;
+  font-family: var(--ff-primary-reg);
+  margin-bottom: 0;
+  cursor: pointer;
+}
+
+.profileImg {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid #929eaa;
+  background-color: #d6d6d6;
+}
+
+.profileImg img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+  object-position: top center;
+}
+
+.iconDiv {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.afterIcon {
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.SettingsoverlayDiv {
+  top: 12px !important;
+  left: -10px !important;
+}
+
+.SettingsPopup {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 0 4px 0 #0000004a;
+  padding: 12px 30px;
+  width: max-content;
+}
+
+.editProfileIcons {
+  vertical-align: bottom !important;
+  margin-right: 5px;
+}
+
+.editprofileDiv {
+  margin-bottom: 10px;
+  color: var(--text-dark-gray);
+  cursor: pointer;
+}
+
+.headerIconSize {
+  font-size: 22px;
+}
+
+.profileOverlay {
+  margin-top: 1rem;
+  z-index: 1;
+}
+
+.profileOverlay > div {
+  width: 200px;
+  height: 100%;
+  background-color: white;
+  box-shadow: 0 0 4px 0px #0000004a;
+  text-align: center;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.overlayLink {
+  font-size: 16px !important;
+  color: var(--main-color) !important;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-family: var(--ff-primary-reg);
+  cursor: pointer;
+  margin: 0;
+}
+
+.main_logo_main {
+  cursor: pointer;
+  max-width: 250px;
+}
+
+.main_logo_main img {
+  max-width: 100%;
+}
+
+.btnMain {
+  display: flex;
+  gap: 10px;
+}
+
+.btnMain button:first-child {
+  background-color: var(--main-color);
+  color: var(--white-color);
+  min-width: 80px;
+  font-family: var(--ff-primary-reg);
+  font-size: 15px;
+}
+
+.btnMain button:last-child {
+  background-color: transparent;
+  color: var(--primary-text-color);
+  min-width: 80px;
+  font-family: var(--ff-primary-reg);
+  font-size: 15px;
+  border: 2px solid var(--primary-text-color);
+}
+
+.navActive {
+  color: var(--main-color) !important;
+}
+
+.cartNumbers {
+  position: absolute;
+  top: 0;
+  right: 4px;
+  font-size: 10px;
+  color: white;
+  background-color: var(--main-color);
+  padding: 4px 8px;
+  border-radius: 50%;
+}
+
+@media (max-width: 1590px) {
+  .gapCustm {
+    gap: 3px;
+  }
+
+  .dflex {
+    margin-left: 30px;
+  }
+}
+
+@media (max-width: 1285px) {
+  .gapCustm {
+    gap: 6px;
+  }
+
+  .nabarLinks {
+    font-size: 15px !important;
+  }
+
+  .header_right {
+    font-size: 15px !important;
+  }
+}
+
+@media (max-width: 1220px) {
+  .main_logo_main img {
+    width: 140px;
+  }
+
+  .nabarLinks {
+    font-size: 13px !important;
+  }
+
+  .header_right {
+    font-size: 13px !important;
+  }
+
+  .headerIconSize {
+    font-size: 19px;
+  }
+}
+
+@media (max-width: 1080px) {
+  .nabarLinks {
+    padding: 2px 8px;
+  }
+
+  .afterIcon {
+    margin-right: 16px;
+  }
+
+  .iconDiv svg {
+    width: 25px !important;
+    height: 25px !important;
+  }
+
+  .iconDiv svg {
+    margin-right: 10px;
+  }
+
+  .profileImg {
+    width: 40px;
+    height: 40px;
+  }
+
+  .headerIconSize {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 1054px) {
+  .gapCustm {
+    gap: 10px !important;
+  }
+}

@@ -1,0 +1,42 @@
+.textAreaBox {
+  position: relative;
+}
+
+.label {
+  color: var(--black-color);
+  text-transform: capitalize;
+  font-family: var(--ff-primary-reg);
+  font-size: var(--fs-base);
+  margin-bottom: 4px;
+}
+
+.textAreaBox textarea {
+  padding: 16px;
+  font-size: var(--fs-base);
+  font-family: var(--ff-primary-reg);
+  color: var(--text-color-black);
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  width: 100%;
+  background-color: var(--white-color);
+  border-radius: 10px;
+  border: 1px solid var(--border-color) !important;
+  outline: none;
+}
+
+.textAreaBox textarea::placeholder {
+  color: var(--placeholder-color);
+  font-family: var(--ff-primary-reg);
+  font-size: var(--fs-base);
+  text-transform: capitalize;
+}
+
+.textAreaBox textarea:disabled {
+  background-color: var(--disabled-input-color);
+  color: #c9c9c9;
+  user-select: none;
+}
+
+.labelDisabled {
+  color: var(--disabled-label-color);
+}

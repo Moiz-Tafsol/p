@@ -1,0 +1,115 @@
+.main {
+    box-shadow: 0px 4px 21px 0px #0000000D;
+    padding: 20px;
+}
+
+.imagesContainer {
+    margin-top: 30px;
+}
+
+.imagesContainerHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    position: relative;
+    height: 550px;
+    overflow-y: auto;
+}
+
+.heading {
+    font-family: var(--ff-primary-bold);
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+.card {
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.imageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.image {
+    width: 79.11px;
+    height: 76.11px;
+    border-radius: 50%;
+    border: 2px solid var(--main-color);
+    flex-shrink: 0;
+    object-fit: cover;
+}
+
+.artistDetails {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+}
+
+.artistDetails h2 {
+    font-family: var(--ff-secondary-bold);
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0em;
+    text-align: left;
+    text-transform: capitalize;
+}
+
+.artistDetails_rows {
+    display: flex;
+}
+
+.artistDetails_rows div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+
+}
+
+.artistDetails_rows span {
+    font-family: var(--ff-secondary-reg);
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: var(--gray-color);
+    border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--main-color);
+    border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--main-color);
+}

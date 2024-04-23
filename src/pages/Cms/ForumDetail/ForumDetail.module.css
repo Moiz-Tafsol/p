@@ -1,0 +1,73 @@
+.quillClass {
+    box-shadow: none;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+}
+
+.row {
+    margin-bottom: 30px;
+}
+
+.uploadImageBox {
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+}
+
+.title {
+    margin-left: 8px;
+    font-size: 20px;
+    font-family: var(--ff-primary-semiBold);
+    margin-top: 10px;
+    color: var(--main-color);
+}
+
+.dropDownLabel {
+    color: var(--text-gray-color) !important;
+    text-transform: capitalize !important;
+    font-family: var(--ff-primary-reg) !important;
+    font-weight: 500 !important;
+    font-size: var(--fs-base) !important;
+    margin-bottom: 4px !important;
+    margin-inline-start: 8px;
+}
+
+.disabledbtn {
+    background-color: grey;
+
+    color: #fff;
+
+    pointer-events: none;
+
+    cursor: not-allowed;
+
+    opacity: 0.65;
+
+}
+
+.loader {
+    height: 100%;
+}
+
+.verticalgap {
+    margin-bottom: 20px;
+}
+
+.btncol {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.quilLabel {
+    color: var(--text-gray-color);
+    text-transform: capitalize;
+    font-family: var(--ff-primary-reg);
+    font-weight: 500;
+    font-size: var(--fs-base);
+    margin-bottom: 0px;
+    margin-inline-start: 8px;
+}
+
+.image {
+    margin: 30px 100px 0px 100px;
+}

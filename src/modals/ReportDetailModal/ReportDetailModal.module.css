@@ -1,0 +1,21 @@
+.main {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  row-gap: 30px;
+}
+
+.main p {
+  margin-bottom: 0;
+  font-family: var(--ff-secondary-reg);
+  font-size: 15px;
+}
+
+.main p:last-child {
+  display: block;
+}
+
+.main p span {
+  font-weight: 600;
+  margin-right: 10px;
+}

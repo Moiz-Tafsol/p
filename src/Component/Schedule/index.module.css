@@ -1,0 +1,119 @@
+.schedule-heading-container {
+    margin-bottom: 20px;
+}
+
+.schedule-heading-container>:first-child {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    padding: 0 !important;
+}
+
+.schedule-heading-icon {
+    color: var(--primary-color);
+    width: 20px;
+    height: 20px;
+}
+
+.schedule-heading-text {
+    color: var(--primary-color);
+    font-family: var(--ff-primary-semi-bold);
+    font-size: 20px;
+    margin: 0;
+}
+
+.schedule-workingDays-container {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+
+.schedule-workingDays-container>:first-child {
+    font-family: var(--ff-primary-med);
+    color: var(--text-gray-color);
+    font-size: var(--fs-base);
+    padding: 0;
+}
+
+.schedule-workingDays-container>:nth-child(2) {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0;
+}
+
+.schedule-workingDays {
+    font-family: var(--ff-primary-reg);
+    color: var(--white-color);
+    background: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    padding: 3px 10px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.schedule-card-container {
+    padding: 0 !important;
+    /* display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(min-content, 100%), 1fr)); */
+}
+
+.schedule-card {
+    width: fit-content;
+    border: 1px solid var(--primary-color);
+    box-shadow: 0px 0px 4px 0px rgba(189, 189, 189, 0.25);
+    padding: 12px;
+    border-radius: 12px;
+    margin: 0px 16px 16px 0px;
+}
+
+.schedule-card p {
+    margin: 0;
+}
+
+.schedule-card>:first-child {
+    font-family: var(--ff-primary-reg);
+    color: var(--primary-color);
+    font-size: var(--fs-base);
+    margin-bottom: 6px;
+}
+
+.schedule-card>:nth-child(2) {
+    display: flex;
+    align-items: center;
+}
+
+.schedule-watchAnalogue-icon {
+    color: var(--primary-color);
+    width: 16px;
+    height: 16px;
+    margin-right: 6px;
+}
+
+.schedule-watchDigitalText-icon {
+    font-family: var(--ff-primary-med);
+    color: var(--text-gray-color);
+    font-size: var(--fs-base);
+}
+
+
+@media only screen and (max-width:768px) {
+    .schedule-workingDays-container>:nth-child(2) {
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (max-width:413px) {
+    .schedule-card {
+        width: 100%;
+    }
+
+
+    .schedule-workingDays-container>:nth-child(2) {
+        width: 100%;
+        overflow-x: scroll;
+    }
+}
